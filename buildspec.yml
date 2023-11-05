@@ -23,4 +23,5 @@ phases:
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$CODEBUILD_BUILD_NUMBER > imagedefinitions.json
 
 artifacts:
-    files: imagedefinitions.json
+  files:
+    - '**/*'
